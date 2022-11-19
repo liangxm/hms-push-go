@@ -21,12 +21,13 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	auth "hms-push-go/push/authention"
-	"hms-push-go/push/config"
 	"reflect"
 
-	"hms-push-go/httpclient"
-	"hms-push-go/push/constant"
+	auth "github.com/liangxm/hms-push-go/push/authention"
+	"github.com/liangxm/hms-push-go/push/config"
+
+	"github.com/liangxm/hms-push-go/httpclient"
+	"github.com/liangxm/hms-push-go/push/constant"
 )
 
 type HttpPushClient struct {

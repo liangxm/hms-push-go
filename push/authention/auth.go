@@ -21,10 +21,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"hms-push-go/push/config"
 	"net/http"
 
-	"hms-push-go/httpclient"
+	"github.com/liangxm/hms-push-go/push/config"
+
+	"github.com/liangxm/hms-push-go/httpclient"
 )
 
 type AuthClient struct {

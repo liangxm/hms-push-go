@@ -20,7 +20,7 @@ import (
 	"errors"
 	"regexp"
 
-	"hms-push-go/push/model"
+	"github.com/liangxm/hms-push-go/push/model"
 )
 
 var (

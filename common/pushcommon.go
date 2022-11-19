@@ -18,9 +18,10 @@ package common
 
 import (
 	"fmt"
-	"hms-push-go/push/config"
-	"hms-push-go/push/core"
 	"sync"
+
+	"github.com/liangxm/hms-push-go/push/config"
+	"github.com/liangxm/hms-push-go/push/core"
 )
 
 const (

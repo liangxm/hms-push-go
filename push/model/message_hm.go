@@ -94,10 +94,15 @@ type Color struct {
 	Blue  int `json:"blue"`
 }
 
-func GetDefaultAndroid() *AndroidConfig {
+func GetDefaultAndroid(timeToLive string) *AndroidConfig {
+	if timeToLive == "" {
+		timeToLive = "86400s"
+	} else {
+		timeToLive = timeToLive + "s"
+	}
 	android := &AndroidConfig{
 		Urgency:      constant.DeliveryPriorityNormal,
-		TTL:          "86400s",
+		TTL:          timeToLive,
 		Notification: nil,
 	}
 	return android
